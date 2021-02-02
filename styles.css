@@ -244,10 +244,10 @@ nav.navbar.navbar-default {
         background: #2d3e50;
         color: white;
         box-sizing:content-box
+        box-sizing: content-box !important;
     }
     .navbar-default .navbar-collapse, .navbar-default .navbar-form{
         border:0;
-        box-sizing:content-box
     }
 }
 @media(max-width:992px){
