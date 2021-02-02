@@ -29,8 +29,6 @@ ul {
     transition: 0.4s;
     text-decoration: none;
     font-size: 20px !important;
-   
-   
 }
 
 .footer2 {
@@ -235,3 +233,25 @@ nav.navbar.navbar-default {
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: green;
 }
+
+@media(max-width:992px){
+    .conheo{
+        font-size: 20px;
+    }
+    .footer1 ul{
+        padding-left: 18.1px;
+    }
+    .footer1 ul li{
+        padding-bottom: 5px;
+    }
+    .footer1 h3{
+        font-size: 15px;
+        font-weight: 800;
+    }
+    }
+
+    @media(max-width:323px){
+        .conheo{
+            display: none;
+        }
+     }
