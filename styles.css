@@ -271,9 +271,9 @@ nav.navbar.navbar-default.navbar-fixed-top.tienhoa {
     }
     ul.nav.navbar-nav.navbar-right {
         margin-top: -12px;
-        width: 100px;
-        height: 120px;
-        overflow: visible!important;
+        width: 160px;
+        height: 130px;
+        overflow: visible!important
     }
     .navbar-default .navbar-collapse, .navbar-default .navbar-form{
         border:0;
