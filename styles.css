@@ -136,6 +136,13 @@ a.btn.btn-default.nutdown {
 
 .portfolio{
     padding: 60px;
+    transition: all 0.4s;
+    opacity:0;
+    transform: translateY(-100px);
+}
+.portfolio.bienra{
+    opacity:1;
+    transform:translateY(0);
 }
 
 .about .ngoisao {
@@ -209,6 +216,12 @@ h1 {
     padding-top: 44px;
     font-size: 36px;
     color: white;
+    transition: all 0.4s;
+}
+
+.tienhoa a.navbar-brand {
+    margin-top: -13px;
+    font-size: 30px;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -225,13 +238,23 @@ h1 {
 
 ul.nav.navbar-nav.navbar-right {
     padding-top: 46px;
+    transition: 0.4s;
+}
+
+.tienhoa ul.nav.navbar-nav.navbar-right {
+    padding-top: 20px;
 }
 
 
 nav.navbar.navbar-default {
     height: 111px;
     background:#2d3e50;
+    transition: all 0.4s;
     margin-bottom: 0px;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.tienhoa {
+    height: 80px;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: green;
@@ -243,8 +266,12 @@ nav.navbar.navbar-default {
         right: 30px;
         background: #2d3e50;
         color: white;
-        box-sizing:content-box
         box-sizing: content-box !important;
+    
+    }
+    ul.nav.navbar-nav.navbar-right {
+        margin-top: -12px;
+
     }
     .navbar-default .navbar-collapse, .navbar-default .navbar-form{
         border:0;
@@ -272,3 +299,6 @@ nav.navbar.navbar-default {
             display: none;
         }
      }
+    .tienhoa{
+        height: 70px;
+    }
