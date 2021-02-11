@@ -1,306 +1,263 @@
-
-*{margin:0; padding:0}
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    background: #956b6bc4;
-    color: white;
-}
-ul {
-    display: inline-block;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.footer1 ul li {
-    float: left;
-    list-style: none;
-    text-align: center;
-    margin-left:10px;
+.footer .mangxhphai a {
+  padding: 0 5px;
+  color: #808080b0;
+  /* margin-left: ; */
+  font-size: 18px;
+  text-decoration: none;
 }
 
-.footer1 ul li a:hover{
-    background: white;
-    color: #0080008a;
-}
-.footer li a {
-    color: white;
-    display: inline-block;
-    padding: 12px;
-    width: 50px;
-    height: 50px;
-    
-    border-radius: 50%;
-    
-    border: 2px solid white;
-    transition: 0.4s;
-    text-decoration: none;
-    font-size: 20px !important;
+.footer .mangxhphai a:hover {
+  color: white;
 }
 
-.footer2 {
-    background: #19121287;
-    padding: 13px;
+.footer {
+  background: beige;
+  background: #131344e8;
+  padding: 26px 0px;
+  border-top: 5px solid #35689e85;
+  color: #808080b0;
 }
 
-.footer h3 {
-    font-weight: 500;
-    padding-bottom: 20px;
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: white;
+  background: #7a91e4;
 }
 
-.footer1 {
-    background: #3a6a92e6;
-    color: white;
-    padding: 26px 10px;
+.vientrenxam .pagination > li > a,
+.vientrenxam .pagination > li > span {
+  border: transparent;
+  border-radius: 5px;
+  margin-left: 2px;
 }
 
-.footer p {
-    font-size: 15px;
-    font-weight: 500;
+.vientrenxam .pagination li:first-child a,
+.vientrenxam .pagination li:last-child a {
+  background: #36679e;
+  color: white;
 }
 
-.footer2 p {
-    font-size: 20px;
-    margin: auto;
-    text-align: center;
+.col-xs-12.col-sm-12.col-md-12.vientrenxam {
+  border-top: 5px solid #80808026;
 }
 
-.contactme button.btn.btn-primary {
-    padding: 10px 19px;
-    background: #0080008a;
-    color: #333;
-    font-size: 22px;
-    margin: 10px 10px;
+.link h4.text-center {
+  padding-top: 35px;
 }
 
-.contactme textarea {
-    font-size: 20px;
-    color: #80808091;
-    padding: 5px 5px;
-    width: 100%;
-    height: 200px;
+.icon2 .fa {
+  border: 1px solid white;
+  padding: 17px;
+  border-radius: 50%;
+  transition: 0.4s;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
-input.form-control {
-    box-shadow: 0 0 0 #00000021;
-    border: 0px solid;
-    border-bottom: 1px solid #00800036;
-    color: #00000099;
-    font-size: 20px;
+.icon2 .fa:hover {
+  background: #00c4ffa1;
+  border-color: #00c4ffa1;
 }
 
-.contactme h2 {
-    margin-top: 90px;
-    text-align: center;
+.link {
+  position: absolute;
+  width: 263px;
+  height: 263px;
+  background: #0000005c;
+  color: white;
+  transition: 0.4s;
+  top: -262px;
 }
 
-a.btn.btn-default.nutdown {
-    background: none;
-    border: 1px solid white;
-    padding: 10px 20px;
-    margin: 20px auto;
-    font-size: 22px;
-    margin-bottom: 70px;
+.link .icon2 {
+  text-align: center;
+  padding-top: 52px;
 }
 
-.about {
-    background: #389c81;
-    padding-top: 90px;
-    margin-top: 70px;
-    color: white;
+.breadcrumb > li + li:before {
+  content: "\f105";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
 }
 
-
-.sanpham:hover .phongto{
-    opacity: 1;
+.mottin a.btn.btn-default.xt {
+  border-radius: 2px;
+  background: none;
+  text-transform: uppercase;
+  color: #5e697b;
+  border: 1px solid black;
+  font-family: lato;
+  padding: 12px 21px;
 }
 
-.phongto .fa.fa-search-plus {font-size: 66px;color: white;padding-top: 100px;}
-
-.phongto {
-    position: absolute;
-    background: #389c81;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    text-align: center;
-    opacity: 0;
-    transition: 0.4s;
-    cursor: pointer; /* chi vao co dau con tro chuot */
+.mottin a.btn.btn-default.xt:hover {
+  background: black;
+  color: white;
 }
 
-.about h2 {
-    font-size: 2.5em;
-    text-align: center;}
-.sanpham {
-    position: relative;
-    margin-bottom:20px;
+.mottin p {
+  color: gray;
+  margin-bottom: 29px;
 }
 
-.portfolio{
-    padding: 60px;
-    transition: all 0.4s;
-    opacity:0;
-    transform: translateY(-100px);
-}
-.portfolio.bienra{
-    opacity:1;
-    transform:translateY(0);
+.mottin .thongtinbv {
+  color: gray;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #8080803b;
+  margin-bottom: 10px;
 }
 
-.about .ngoisao {
-    width: 40%;
-    margin: auto;
-    border-top: 3px solid rgb(255, 255, 255);
-    margin-top: 30px;
-    text-align: center;
-}
-.about .ngoisao i{
-    width: 40px;
-    height: 40px;
-    background: #389c81;
-    position: relative;
-    top: -21px;
-    line-height: 40px;
-    font-size: 35px;
-    color:#ffffff;
-}
-.about p {
-    color: white;
-    font-size: 15px;
+.caption h3 {
+  font-size: 23px;
+  margin: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #77818f;
 }
 
-.nenxanh .ngoisao {
-    width: 23%;
-    margin: auto;
-    border-top: 3px solid white;
-    margin-top: 39px;
+.thumbnail .caption {
+  padding: 0px;
+  /* margin: 0px; */
 }
 
-.nenxanh .ngoisao li{
-    width: 40px;
-    height: 40px;
-    background: #389c81;
-    position: relative;
-    top: -21px;
-    line-height: 40px;
-    font-size: 35px;
-    color:white;
-}
-.ngoisao li{
-    width: 40px;
-    height: 40px;
-    background: white;
-    position: relative;
-    top: -21px;
-    line-height: 40px;
-    font-size: 35px;
-    color:black;
-}
-.ngoisao {
-    width: 23%;
-    margin: auto;
-    border-top: 3px solid black;
-    margin-top: 30px;
-    text-align: center;
+.thumbnail {
+  padding: 0;
+  border: none;
+  position: relative;
+  overflow: hidden;
 }
 
+.thumbnail:hover .link {
+  top: 0px;
+}
 
-h1 {
-    color: white;
-    text-transform: uppercase;
-    font-size: 40px;
+.noidung {
+  padding-top: 120px;
 }
-.nenxanh .text-center {
-    padding: 90px 0 112px 0;
-    background: #00805ec7;
+
+.info .breadcrumb a {
+  font-size: 20px;
+  color: white;
 }
+
+ol.breadcrumb {
+  background: none;
+  float: right;
+  padding-top: 24px;
+}
+
+.info i.fa.fa-bars {
+  color: black;
+  background: white;
+  padding: 8px 10px;
+  font-size: 25px;
+  border-radius: 20%;
+  margin-left: 10px;
+}
+
+.info h3 {
+  font-size: 33px;
+  font-family: lato;
+}
+
+.info {
+  color: white;
+  background: #5673dcc9;
+  padding: 43px;
+}
+
+nav.navbar.navbar-default {
+  background: white;
+  border-bottom: 0px solid transparent;
+}
+
 .navbar-default .navbar-brand {
-    padding-top: 44px;
-    font-size: 36px;
-    color: white;
-    transition: all 0.4s;
-}
-
-.tienhoa a.navbar-brand {
-    margin-top: -13px;
-    font-size: 30px;
-}
-
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    color: green;
+  padding: 0;
+  margin: 22px;
 }
 
 .navbar-default .navbar-nav > li > a {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-    
+  font-size: 15px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-top: 5px solid transparent;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0 12px;
+  transition: 0.4s;
+  color: gray;
 }
 
-ul.nav.navbar-nav.navbar-right {
-    padding-top: 46px;
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: green;
+  border-color: green;
+}
+
+.icon {
+  float: left;
+  padding-top: 26px;
+  font-size: 20px;
+  padding-left: 15px;
+  color: gray;
+}
+
+.icon i {
+  padding: 12px;
+}
+
+@media (max-width: 767px) {
+  * {
+  }
+
+.footer .mangxhphai a {
+    font-size: 10px;
+}
+
+  .link {
+    width: 384px;
+    height: 384px;
+    top:0px;
+    opacity: 0;
+  }
+  .thumbnail:hover .link,.thumbnail:focus .link {
+    opacity:1;
+  }
+
+  .breadcrumb > li:first-child a {
+    padding-left: 19px;
+  }
+
+  .info .breadcrumb li a {
+    font-size: 10px;
+  }
+  .info .breadcrumb a {
+    font-size: 20px;
+  }
+
+  .info i.fa.fa-bars {
+    width: 42px;
+    margin-left: 30px;
+  }
+
+  .info h3 {
+    font-size: 23px;
+  }
+  .navbar-default .navbar-nav > li > a {
+    padding: 10px 0px;
     transition: 0.4s;
+  }
+  .icon {
+    display: none;
+  }
 }
-
-.tienhoa ul.nav.navbar-nav.navbar-right {
-    padding-top: 20px;
-}
-
-
-nav.navbar.navbar-default {
-    height: 111px;
-    background:#2d3e50;
-    transition: all 0.4s;
-    margin-bottom: 0px;
-}
-
-nav.navbar.navbar-default.navbar-fixed-top.tienhoa {
-    height: 80px;
-}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: green;
-}
-@media(max-width:767px){
-    ul.nav.navbar-nav.navbar-right {
-        padding-top: 0;
-        position: absolute;
-        right: 30px;
-        background: #2d3e50;
-        color: white;
-        box-sizing: content-box !important;
-    
-    }
-    ul.nav.navbar-nav.navbar-right {
-        margin-top: -12px;
-        width: 160px;
-        height: 130px;
-        overflow: visible!important
-    }
-    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-        border:0;
-    }
-}
-@media(max-width:992px){
-  
-    .conheo{
-        font-size: 20px;
-    }
-    .footer1 ul{
-        padding-left: 18.1px;
-    }
-    .footer1 ul li{
-        padding-bottom: 5px;
-    }
-    .footer1 h3{
-        font-size: 15px;
-        font-weight: 800;
-    }
-    }
-
-    @media(max-width:323px){
-        .conheo{
-            display: none;
-        }
-     }
-    .tienhoa{
-        height: 70px;
-    }
