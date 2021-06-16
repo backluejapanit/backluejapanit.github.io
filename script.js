@@ -14,10 +14,10 @@ let countNum = document.querySelector('.countNum')
 const corner = document.querySelector('.corner')
 
 //Song titles
-const songs = ['lateNight' , 'veraLofi', 'flymetothemoon']
+const songs = ['lateNight' , 'veraLofi', 'flymetothemoon','mataiiwake','alreadybroken']
 
 //Kepp track of songs to default
-let songIndex = 2
+let songIndex = 4
 
 // innitially load song info DOM
 loadSong(songs[songIndex])
