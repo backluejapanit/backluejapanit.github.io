@@ -9,6 +9,10 @@ const progressContainer = document.querySelector('.progress-container')
 const title = document.querySelector('#title')
 const cover = document.querySelector('#cover')
 
+const countBtn = document.querySelector('.countBtn')
+let countNum = document.querySelector('.countNum')
+const corner = document.querySelector('.corner')
+
 //Song titles
 const songs = ['lateNight' , 'veraLofi', 'flymetothemoon']
 
@@ -25,11 +29,14 @@ function loadSong(song){
     cover.src = `image/${song}.jpg`
 }
 function playSong(){
-musicContainer.classList.add('play')
-playBtn.querySelector('i.fa').classList.remove('fa-play')
-playBtn.querySelector('i.fa').classList.add('fa-pause')
+    musicContainer.classList.add('play')
+    playBtn.querySelector('i.fa').classList.remove('fa-play')
+    playBtn.querySelector('i.fa').classList.add('fa-pause')
 
-audio.play()
+    audio.play()
+}
+function clickFadeOut(){
+    corner.classList.add('clickFadeOut')
 }
 function pauseSong(){
     musicContainer.classList.remove('play')
@@ -71,6 +78,10 @@ function setProgress(e) {
 
     audio.currentTime = (clickX/ width) * duration
 }
+function countUp() {
+    countNum.innerHTML++ ;
+}
+
 //event listeners
 playBtn.addEventListener('click', () =>{
     const isPlaying = musicContainer.classList.contains('play')
@@ -91,3 +102,8 @@ audio.addEventListener('timeupdate', updateProgress)
 progressContainer.addEventListener('click', setProgress)
 
 audio.addEventListener('ended' , nextSong)
+
+countBtn.addEventListener('click',()=>{
+    countUp()
+    clickFadeOut()
+})
